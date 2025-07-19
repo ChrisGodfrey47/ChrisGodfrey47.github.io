@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio | Electrical Engineer</title>
+  <title>Chris Godfrey | Portfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,56 +11,58 @@
     <nav>
       <h1>Chris Godfrey</h1>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#resume">Resume</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I'm a master's student in Electrical Engineering specializing in power electronics and sustainable energy. My work focuses on energy-efficient converter design and renewable integration.
-    </p>
-  </section>
+  <main>
+    <section id="about" class="fade-in">
+      <h2>About Me</h2>
+      <p>
+        I'm a master's student in Electrical Engineering focusing on power electronics and sustainable energy. I’m passionate about efficient converter design and the future of clean energy systems.
+      </p>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Bidirectional DC-DC Converter for EVs</h3>
-      <p>Designed and simulated a bidirectional converter for battery charging using SiC MOSFETs for high efficiency.</p>
-    </div>
-    <div class="project">
-      <h3>PV-based Microinverter System</h3>
-      <p>Developed a grid-tied microinverter with MPPT and LCL filtering for improved power quality and reliability.</p>
-    </div>
-  </section>
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="project-card">
+        <h3>Bidirectional DC-DC Converter for EVs</h3>
+        <p>High-efficiency converter using SiC devices, optimized for EV charging and regenerative braking.</p>
+      </div>
+      <div class="project-card">
+        <h3>PV-based Microinverter System</h3>
+        <p>Single-stage inverter with MPPT and LCL filter, designed for grid-tied solar energy systems.</p>
+      </div>
+    </section>
 
-  <section id="research">
-    <h2>Research & Publications</h2>
-    <ul>
-      <li>“High-Efficiency DAB Converter for Energy Storage Applications” – IEEE Conference 2025 (submitted)</li>
-      <li>“Reliability Optimization of Microinverters with ML Algorithms” – Under preparation</li>
-    </ul>
-  </section>
+    <section id="research" class="fade-in">
+      <h2>Research & Publications</h2>
+      <ul>
+        <li>“High-Efficiency DAB Converter for Energy Storage Applications” – IEEE Conference 2025 (submitted)</li>
+        <li>“Reliability Optimization of Microinverters using ML” – Under preparation</li>
+      </ul>
+    </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <p><a href="assets/resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
-  </section>
+    <section id="resume" class="fade-in">
+      <h2>Resume</h2>
+      <p><a href="assets/resume.pdf" target="_blank">Download Resume (PDF)</a></p>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: yourname@example.com</p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
-  </section>
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <p>Email: yourname@example.com</p>
+      <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Chris Godfrey. All rights reserved.</p>
+    <p>&copy; 2025 Chris Godfrey</p>
   </footer>
 
   <script src="script.js"></script>
