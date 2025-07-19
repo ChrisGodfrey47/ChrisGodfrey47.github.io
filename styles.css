@@ -1,4 +1,4 @@
-/* Reset and base styles */
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -6,25 +6,24 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Courier New', monospace;
+  background: #fff;
+  color: #000;
   line-height: 1.6;
-  background-color: #f9f9f9;
-  color: #222;
-  padding: 0 1rem;
 }
 
 header {
-  background-color: #003366;
-  color: white;
-  padding: 1rem 0;
+  background: #000;
+  color: #fff;
+  padding: 1rem 2rem;
 }
 
 nav {
-  max-width: 960px;
-  margin: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: 960px;
+  margin: auto;
 }
 
 nav ul {
@@ -34,40 +33,55 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: #fff;
   text-decoration: none;
+  transition: border-bottom 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+main {
+  max-width: 960px;
+  margin: 2rem auto;
+  padding: 0 1rem;
 }
 
 section {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 1rem 0;
+  margin-bottom: 3rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease;
 }
 
-.project {
-  background: white;
-  border: 1px solid #ccc;
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.project-card {
+  border: 2px solid #000;
   padding: 1rem;
-  margin-top: 1rem;
-  border-radius: 6px;
+  margin: 1rem 0;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  background: #f0f0f0;
+}
+
+a {
+  color: #000;
+  text-decoration: underline;
 }
 
 footer {
   text-align: center;
-  padding: 1rem 0;
-  background-color: #003366;
-  color: white;
-  margin-top: 2rem;
+  padding: 1rem;
+  background: #000;
+  color: #fff;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-
-  nav {
-    flex-direction: column;
-  }
-}
